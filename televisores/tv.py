@@ -6,7 +6,7 @@ class TV:
         self.canal=1
         self.volumen=1
         self.precio=500
-        TV.numtTV+=1
+        TV.numTV+=1
     @classmethod
     def getnumTV(cls):
         return cls.numTV

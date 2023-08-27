@@ -8,7 +8,7 @@ class TV:
         self.precio=500
         TV.numTV+=1
     @classmethod
-    def getnumTV(cls):
+    def getNumTV(cls):
         return cls.numTV
     @classmethod
     def setNumTV(cls,numTV):

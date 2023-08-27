@@ -11,7 +11,7 @@ class TV:
     def getnumTV(cls):
         return cls.numTV
     @classmethod
-    def setnumTV(cls,numTV):
+    def setNumTV(cls,numTV):
         cls.numTV=numTV
     def getPrecio(self):
         return self.precio
@@ -43,13 +43,13 @@ class TV:
         return self.estado
     def canalUp(self,canal):
         if self.estado==True and canal<120:
-            volumen+=1
+            canal+=1
     def canalDown(self,canal):
         if self.estado==True and canal>1:
-            volumen-=1
+            canal-=1
     def volumenUp(self,vol):
         if self.estado==True and vol<7:
-            volumen+=1
+            vol+=1
     def volumenDown(self,vol):
         if self.estado==True and vol>0:
-            volumen-=1
+            vol-=1
